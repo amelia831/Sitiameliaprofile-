@@ -132,3 +132,138 @@ footer {
 .gallery-card h3 {
     color: #70452c;
 }
+
+/* ===== MY LITTLE FOREST HOME ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background-color: #f5eadb;
+    color: #65452f;
+}
+
+/* HEADER */
+
+header {
+    background-color: #e8d5bd;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #65452f;
+    margin-bottom: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #76543b;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #b17a48;
+}
+
+/* HOME */
+
+.home {
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background:
+        radial-gradient(circle at 10% 20%, #e4cfb5 0, transparent 25%),
+        radial-gradient(circle at 90% 80%, #d7bea1 0, transparent 30%),
+        linear-gradient(135deg, #f8eee2, #e8d5bd);
+}
+
+.beranda-konten {
+    max-width: 700px;
+    padding: 45px 30px;
+    background-color: rgba(255, 250, 243, 0.8);
+    border: 2px solid #d8b995;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(101, 69, 47, 0.12);
+}
+
+.welcome {
+    letter-spacing: 3px;
+    font-size: 12px;
+    color: #a17a57;
+}
+
+.beranda-konten h1 {
+    font-size: 42px;
+    color: #68462f;
+    margin: 15px 0;
+}
+
+.beranda-konten h2 {
+    font-size: 23px;
+    color: #99704e;
+}
+
+.beranda-konten p {
+    line-height: 1.8;
+}
+
+/* BUTTON */
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 13px 25px;
+    background-color: #896747;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.btn:hover {
+    background-color: #65452f;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #d9c1a6;
+    color: #65452f;
+    text-align: center;
+    padding: 15px;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .beranda-konten h1 {
+        font-size: 30px;
+    }
+
+    .beranda-konten h2 {
+        font-size: 19px;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+}
+
