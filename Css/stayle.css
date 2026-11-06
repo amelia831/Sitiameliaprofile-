@@ -1,1 +1,160 @@
 
+/* =================================
+   MY LITTLE FOREST 🌿
+   Theme: Bambi Woodland
+================================= */
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    background-color: #FAF5ED;
+    color: #5C4535;
+    font-family: Georgia, serif;
+    line-height: 1.8;
+}
+
+/* HEADER */
+header {
+    background-color: #E8D8C5;
+    padding: 25px 20px;
+    text-align: center;
+    border-bottom: 2px solid #C5A889;
+}
+
+header h2 {
+    font-size: 28px;
+    color: #795C43;
+}
+
+/* NAVBAR */
+nav {
+    background-color: #795C43;
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #FFF8EF;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #C9D8B5;
+}
+
+/* MAIN */
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 25px;
+}
+
+/* JUDUL */
+h1 {
+    color: #795C43;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #8A674B;
+    margin-bottom: 15px;
+}
+
+/* PARAGRAF */
+p {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+/* SECTION */
+section {
+    background-color: #FFFDF8;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    border: 1px solid #E5D5C2;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    background-color: #795C43;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #A88B6C;
+}
+
+/* IMAGE */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #E8D8C5;
+    color: #795C43;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+/* LINK */
+a {
+    color: #795C43;
+}
+
+/* MOBILE PHONE */
+@media screen and (max-width: 600px) {
+
+    header h2 {
+        font-size: 23px;
+    }
+
+    nav ul {
+        gap: 10px 15px;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+    }
+
+    main {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+
