@@ -1,17 +1,11 @@
+/* HUTAN KECILKU */
 
-/* =================================
-   MY LITTLE FOREST 🌿
-   Theme: Bambi Woodland
-================================= */
-
-/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* BODY */
 body {
     background-color: #FAF5ED;
     color: #5C4535;
@@ -24,15 +18,14 @@ header {
     background-color: #E8D8C5;
     padding: 25px 20px;
     text-align: center;
-    border-bottom: 2px solid #C5A889;
 }
 
-header h2 {
+.logo {
     font-size: 28px;
     color: #795C43;
 }
 
-/* NAVBAR */
+/* NAVIGASI */
 nav {
     background-color: #795C43;
     padding: 15px;
@@ -47,114 +40,58 @@ nav ul {
 }
 
 nav ul li a {
-    color: #FFF8EF;
+    color: white;
     text-decoration: none;
     font-size: 16px;
-    transition: 0.3s;
 }
 
-nav ul li a:hover {
-    color: #C9D8B5;
-}
-
-/* MAIN */
+/* HOME */
 main {
     max-width: 1100px;
     margin: auto;
     padding: 50px 25px;
 }
 
-/* JUDUL */
+.home {
+    background-color: #F3E6D5;
+    padding: 50px 25px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.welcome {
+    color: #A67C52;
+}
+
 h1 {
     color: #795C43;
     font-size: 45px;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 h2 {
-    color: #8A674B;
+    color: #8A6748;
     margin-bottom: 15px;
 }
 
-/* PARAGRAF */
 p {
-    font-size: 17px;
     margin-bottom: 20px;
 }
 
-/* SECTION */
-section {
-    background-color: #FFFDF8;
-    padding: 30px;
-    margin-bottom: 25px;
-    border-radius: 15px;
-    border: 1px solid #E5D5C2;
-}
-
-/* BUTTON */
+/* TOMBOL */
 .btn {
     display: inline-block;
     background-color: #795C43;
     color: white;
     padding: 12px 25px;
-    border-radius: 30px;
+    border-radius: 25px;
     text-decoration: none;
-}
-
-.btn:hover {
-    background-color: #A88B6C;
-}
-
-/* IMAGE */
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px;
 }
 
 /* FOOTER */
 footer {
     background-color: #E8D8C5;
-    color: #795C43;
     text-align: center;
-    padding: 25px;
-    margin-top: 40px;
+    padding: 20px;
+    margin-top: 30px;
 }
-
-/* LINK */
-a {
-    color: #795C43;
-}
-
-/* MOBILE PHONE */
-@media screen and (max-width: 600px) {
-
-    header h2 {
-        font-size: 23px;
-    }
-
-    nav ul {
-        gap: 10px 15px;
-    }
-
-    nav ul li a {
-        font-size: 13px;
-    }
-
-    main {
-        padding: 25px 15px;
-    }
-
-    h1 {
-        font-size: 32px;
-    }
-
-    p {
-        font-size: 15px;
-    }
-
-    section {
-        padding: 20px;
-    }
-}
-
