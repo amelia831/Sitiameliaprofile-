@@ -4,81 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Hutan Kecilku | Website Pribadi</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="Css/style.Css">
-
+    <title>Biodata & Matematika</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <div class="logo">
-            🦌 My Little Forest
-        </div>
+<header>
+    <h1>🦌 My Little Forest</h1>
+    <p>Welcome to My Website</p>
+</header>
 
-        <!-- MENU NAVIGASI -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="education.html">My Education</a></li>
-                <li><a href="experience.html">My Experience</a></li>
-                <li><a href="bukti-belajar.html">Bukti Belajar</a></li>
-                <li><a href="portfolio.html">My Portfolio</a></li>
-                <li><a href="gallery.html">My Gallery</a></li>
-                <li><a href="hobby.html">My Hobby</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
-        </nav>
-    </header>
+<nav>
+    <button onclick="bukaHalaman('biodata')">Biodata</button>
+    <button onclick="bukaHalaman('matematika')">Matematika</button>
+</nav>
 
+<section id="biodata" class="halaman">
+    <h2>🌷 Biodata Diri</h2>
+    <p>Nama: Nama Kamu</p>
+    <p>Tempat, Tanggal Lahir: ...</p>
+    <p>Alamat: ...</p>
+    <p>Hobi: Membaca Novel</p>
+    <p>Cita-cita: ...</p>
+</section>
 
-    <!-- HALAMAN HOME -->
-    <main>
+<section id="matematika" class="halaman">
+    <h2>🧮 Kalkulator Matematika</h2>
 
-        <section id="home" class="home">
+    <input type="number" id="angka1" placeholder="Angka pertama">
 
-            <div class="home-content">
+    <input type="number" id="angka2" placeholder="Angka kedua">
 
-                <p class="welcome">
-                    WELCOME TO MY PERSONAL WEBSITE
-                </p>
+    <br><br>
 
-                <h1>My Little Forest 🌿</h1>
+    <button onclick="hitung('+')">+</button>
+    <button onclick="hitung('-')">-</button>
+    <button onclick="hitung('*')">×</button>
+    <button onclick="hitung('/')">÷</button>
 
-                <h2>A Little Story About Me</h2>
+    <h3 id="hasil">Hasil: 0</h3>
+</section>
 
-                <p>
-                    Halo! Selamat datang di website pribadi saya.
-                    Website ini berisi tentang profil, perjalanan
-                    pendidikan, pengalaman, dan bukti pembelajaran saya.
-                </p>
+<script>
+function bukaHalaman(nama) {
+    document.querySelectorAll('.halaman').forEach(function(halaman) {
+        halaman.style.display = 'none';
+    });
 
-                <a href="about.html" class="btn">
-                    Explore More ♡
-                </a>
+    document.getElementById(nama).style.display = 'block';
+}
 
-            </div>
+function hitung(operator) {
+    let a = Number(document.getElementById('angka1').value);
+    let b = Number(document.getElementById('angka2').value);
+    let hasil;
 
-        </section>
+    if (operator === '+') {
+        hasil = a + b;
+    } else if (operator === '-') {
+        hasil = a - b;
+    } else if (operator === '*') {
+        hasil = a * b;
+    } else if (operator === '/') {
+        hasil = b === 0 ? 'Tidak bisa dibagi 0' : a / b;
+    }
 
-    </main>
+    document.getElementById('hasil').innerHTML = 'Hasil: ' + hasil;
+}
 
-
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2026 My Little Forest</p>
-        <p>Made with love ♡</p>
-    </footer>
-
-
-    <!-- JAVASCRIPT -->
-    <script src="js/script.js"></script>
+bukaHalaman('biodata');
+</script>
 
 </body>
 </html>
-
